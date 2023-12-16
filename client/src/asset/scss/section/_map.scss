@@ -1,0 +1,183 @@
+.info__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+
+    .menu__info {
+        width: 15%;
+        background-color: #F4F4F4;
+        text-align: center;
+        border-right: 1px solid #D6D6D6;
+
+        .menu__title {
+            margin: 5vh 0 3vh 0;
+            color: var(--white);
+            display: inline-block;
+            padding: 1vh 4vw;
+            border-radius: 10px;
+            background-color: #00E594;
+            text-transform: uppercase;
+        }
+
+        .menu__Detail {
+
+            ul {
+                text-align: left;
+
+                li {
+                    width: 100%;
+                    background-color: #fff;
+                    position: relative;
+
+                    a {
+                        text-align: left;
+                        display: inline-block;
+                        padding: 1.5vh 40px;
+                        color: var(--black700);
+                        font-size: 1rem;
+
+                        svg {
+                            color: var(--black700);
+                            position: absolute;
+                            content: '';
+                            top: 1.6vh;
+                            left: 18px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #00e59527;
+
+                        a {
+                            color: var(--black);
+
+                            svg {
+                                color: var(--black);
+                            }
+                        }
+                    }
+
+                    &.active {
+                        background-color: #00e59527;
+
+                        a {
+                            color: var(--black);
+
+                            svg {
+                                color: var(--black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .map__info {
+        width: 85%;
+        margin: 5vh 0 3vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .map__header {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #D6D6D6;
+
+            .map__title {
+                display: inline-block;
+                padding: 0.5rem 1.5rem;
+                border-bottom: 3px solid var(--gree);
+                font-size: 1.5rem;
+            }
+
+            .map__search {
+                display: flex;
+                align-items: center;
+                border: 1px solid #D6D6D6;
+                border-radius: 5px;
+                // padding: 0.rem 1rem;
+                margin-bottom: 1vh;
+                position: relative;
+
+                input {
+                    margin-left: 1rem;
+                    font-size: 1.2rem;
+                    padding: 0.5rem 1rem;
+
+                    &::placeholder {
+                        color: #D6D6D6;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    
+                }
+
+                .search__img {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 6px;
+                    
+
+                    svg {
+                        color: #D6D6D6;
+                        width: 100%;
+                        width: 2rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .local__tap {
+            width: 85%;
+            margin-top: 1vw;
+            padding: 0 3vw ;
+            ul {
+                
+                display: flex;
+                justify-content: space-between;
+                li {
+                    padding: 0.3rem 1rem;
+                    
+                    a {
+                        font-size: 1.1rem;
+                        color: #626262;
+                    }
+
+                    &.tapActive {
+                        border: 1px solid var(--primary-color);
+                        border-radius: 50px;
+                        
+                        a {
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--primary-color);
+                        border-radius: 50px;
+                        
+                        a {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .local__UN {
+            width: 85%;
+            margin-top: 5vh;
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}

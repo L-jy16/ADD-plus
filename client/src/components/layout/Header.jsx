@@ -17,7 +17,7 @@ const Header = () => {
 
                 <nav className="nav">
                     <ul>
-                        <li><Link to="/" className='active'>ADD MAP</Link></li>
+                        <li><Link to="/map" className='active'>ADD MAP</Link></li>
                         <li><Link to="/">ADD COMM</Link></li>
                         <li><Link to="/">ADD SCORE</Link></li>
                         <li><Link to="/">MYPAGE</Link></li>

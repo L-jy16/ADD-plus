@@ -7,8 +7,6 @@ import 'swiper/css/pagination';
 
 import { Pagination, Autoplay } from 'swiper/modules';
 
-import heartImg from '../asset/img/heart.png'
-import eyeImg from '../asset/img/eye.png'
 import main_middle_ad from '../asset/img/main_middle_ad.png'
 import main_un_ad1 from '../asset/img/Un_Ad_hywoman.png'
 import main_un_ad2 from '../asset/img/Un_Ad_Sungshin.png'
@@ -20,7 +18,8 @@ import main_comm from '../asset/img/main_comm.png'
 import main_point from '../asset/img/main_point.png'
 
 import { LuEye } from "react-icons/lu";
-
+import { FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa6";
 
 const Home = () => {
     return (
@@ -75,7 +74,7 @@ const Home = () => {
                                 <div className="comm__like">
                                     <div className="emoz">😍</div>
                                     <div className="like__button">
-                                        <Link to='/'><img src={heartImg} alt="like button" /></Link>
+                                        <FaRegHeart />
                                     </div>
                                 </div>
                                 <div className="comm__header">
@@ -101,7 +100,7 @@ const Home = () => {
                                         <span>54</span>
                                     </div>
                                     <div className="comm__like__view">
-                                        <img src={heartImg} alt="like button" />
+                                        <FaRegHeart />
                                         <span>987</span>
                                     </div>
                                 </div>
@@ -117,7 +116,7 @@ const Home = () => {
                                 <div className="comm__like">
                                     <div className="emoz">🙄</div>
                                     <div className="like__button">
-                                        <Link to='/'><img src={heartImg} alt="like button" /></Link>
+                                        <FaHeart />
                                     </div>
                                 </div>
                                 <div className="comm__header">
@@ -138,13 +137,15 @@ const Home = () => {
                             </div>
                             <div className="main__comm__view">
                                 <div className="comm__left">
-                                    <div className="comm__view">
-                                        <img src={eyeImg} alt="view icon" />
-                                        <span>54</span>
-                                    </div>
-                                    <div className="comm__like__view">
-                                        <img src={heartImg} alt="like button" />
-                                        <span>987</span>
+                                    <div className="comm__left">
+                                        <div className="comm__view">
+                                            <LuEye />
+                                            <span>54</span>
+                                        </div>
+                                        <div className="comm__like__view">
+                                            <FaRegHeart />
+                                            <span>987</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="comm__right">
@@ -235,11 +236,11 @@ const Home = () => {
                             <div className="main__HOF__view">
                                 <div className="HOF__left">
                                     <div className="HOF__view">
-                                        <img src={eyeImg} alt="view icon" />
+                                        <LuEye />
                                         <span>54</span>
                                     </div>
                                     <div className="HOF__like__view">
-                                        <img src={heartImg} alt="like button" />
+                                        <FaRegHeart />
                                         <span>987</span>
                                     </div>
                                 </div>
@@ -269,11 +270,11 @@ const Home = () => {
                             <div className="main__HOF__view">
                                 <div className="HOF__left">
                                     <div className="HOF__view">
-                                        <img src={eyeImg} alt="view icon" />
+                                        <LuEye />
                                         <span>54</span>
                                     </div>
                                     <div className="HOF__like__view">
-                                        <img src={heartImg} alt="like button" />
+                                        <FaRegHeart />
                                         <span>987</span>
                                     </div>
                                 </div>
@@ -303,11 +304,11 @@ const Home = () => {
                             <div className="main__HOF__view">
                                 <div className="HOF__left">
                                     <div className="HOF__view">
-                                        <img src={eyeImg} alt="view icon" />
+                                        <LuEye />
                                         <span>54</span>
                                     </div>
                                     <div className="HOF__like__view">
-                                        <img src={heartImg} alt="like button" />
+                                        <FaRegHeart />
                                         <span>987</span>
                                     </div>
                                 </div>
@@ -337,11 +338,11 @@ const Home = () => {
                             <div className="main__HOF__view">
                                 <div className="HOF__left">
                                     <div className="HOF__view">
-                                        <img src={eyeImg} alt="view icon" />
+                                        <LuEye />
                                         <span>54</span>
                                     </div>
                                     <div className="HOF__like__view">
-                                        <img src={heartImg} alt="like button" />
+                                        <FaRegHeart />
                                         <span>987</span>
                                     </div>
                                 </div>
