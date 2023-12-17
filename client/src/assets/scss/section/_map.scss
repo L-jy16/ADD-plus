@@ -145,16 +145,18 @@
                 li {
                     padding: 0.3rem 1rem;
                     
-                    a {
+                    button {
                         font-size: 1.1rem;
                         color: #626262;
+                        background-color: var(--white);
+                        cursor: pointer;
                     }
 
-                    &.tapActive {
+                    &.activeTap {
                         border: 1px solid var(--primary-color);
                         border-radius: 50px;
                         
-                        a {
+                        button {
                             color: var(--primary-color);
                         }
                     }
@@ -163,7 +165,7 @@
                         border: 1px solid var(--primary-color);
                         border-radius: 50px;
                         
-                        a {
+                        button {
                             color: var(--primary-color);
                         }
                     }

@@ -7,19 +7,20 @@ import 'swiper/css/pagination';
 
 import { Pagination, Autoplay } from 'swiper/modules';
 
-import main_middle_ad from '../asset/img/main_middle_ad.png'
-import main_un_ad1 from '../asset/img/Un_Ad_hywoman.png'
-import main_un_ad2 from '../asset/img/Un_Ad_Sungshin.png'
-import main_un_ad3 from '../asset/img/Un_Ad_Gangdong.png'
-import main_un_ad4 from '../asset/img/Un_AD_sookmyung.png'
-import main_map from '../asset/img/main_map.png'
-import main_score from '../asset/img/main_score.png'
-import main_comm from '../asset/img/main_comm.png'
-import main_point from '../asset/img/main_point.png'
+import heartImg from '../assets/img/heart.png'
+import main_middle_ad from '../assets/img/main_middle_ad.png'
+import main_un_ad1 from '../assets/img/Un_Ad_hywoman.png'
+import main_un_ad2 from '../assets/img/Un_Ad_Sungshin.png'
+import main_un_ad3 from '../assets/img/Un_Ad_Gangdong.png'
+import main_un_ad4 from '../assets/img/Un_AD_sookmyung.png'
+import main_map from '../assets/img/main_map.png'
+import main_score from '../assets/img/main_score.png'
+import main_comm from '../assets/img/main_comm.png'
+import main_point from '../assets/img/main_point.png'
 
 import { LuEye } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
+// import { FaHeart } from "react-icons/fa6";
 
 const Home = () => {
     return (
@@ -27,13 +28,12 @@ const Home = () => {
             <div id="slider" role='slider' aria-valuenow="0">
                 <Swiper
                     slidesPerView={'auto'}
-                    spaceBetween={30}
                     pagination={{
                         clickable: true,
                     }}
                     loop={'true'}
                     modules={[Pagination, Autoplay]}
-                    autoplay={{ delay: 200500 }}
+                    autoplay={{ delay: 4000 }}
                     className="slider__Wrap"
                 >
                     <SwiperSlide>
@@ -74,12 +74,12 @@ const Home = () => {
                                 <div className="comm__like">
                                     <div className="emoz">😍</div>
                                     <div className="like__button">
-                                        <FaRegHeart />
+                                        <Link to='/'><img src={heartImg} alt="like button" /></Link>
                                     </div>
                                 </div>
                                 <div className="comm__header">
                                     <div className="category">
-                                        <span className='cate_1'>Hot</span>
+                                        <span className='cate_1'>HOT</span>
                                     </div>
                                     <h4 className="comm__title"><Link to=''>입시어쩌고 저쩌고</Link></h4>
                                 </div>
@@ -116,7 +116,7 @@ const Home = () => {
                                 <div className="comm__like">
                                     <div className="emoz">🙄</div>
                                     <div className="like__button">
-                                        <FaHeart />
+                                        <Link to='/'><img src={heartImg} alt="like button" /></Link>
                                     </div>
                                 </div>
                                 <div className="comm__header">
@@ -137,15 +137,13 @@ const Home = () => {
                             </div>
                             <div className="main__comm__view">
                                 <div className="comm__left">
-                                    <div className="comm__left">
-                                        <div className="comm__view">
-                                            <LuEye />
-                                            <span>54</span>
-                                        </div>
-                                        <div className="comm__like__view">
-                                            <FaRegHeart />
-                                            <span>987</span>
-                                        </div>
+                                    <div className="comm__view">
+                                        <LuEye />
+                                        <span>54</span>
+                                    </div>
+                                    <div className="comm__like__view">
+                                        <FaRegHeart />
+                                        <span>987</span>
                                     </div>
                                 </div>
                                 <div className="comm__right">
