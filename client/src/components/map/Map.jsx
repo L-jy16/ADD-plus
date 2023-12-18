@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom'
 
-import korea__map from '../../assets/img/map/map.png'
-
 import { FaRegMap } from "react-icons/fa";
 import { FiTable } from "react-icons/fi";
 import { PiMagnifyingGlassBold } from "react-icons/pi";
@@ -12,12 +10,12 @@ import MapDetail from './MapDetail';
 
 const Map = () => {
 
-    const {region} = useParams();
-    // const [activeTap, setActiveTap] = useState('전국');
-    const [activeTap, setActiveTap] = useState(region || '전국');
+    const { region } = useParams();
+    const [activeTap, setActiveTap] = useState('전국');
 
     const handleTapClick = (tap) => {
         setActiveTap(tap);
+        // region(tap)
     };
 
     return (
@@ -26,7 +24,7 @@ const Map = () => {
                 <h3 className='menu__title'>add map</h3>
                 <div className="menu__Detail">
                     <ul>
-                        <li className='active'><Link to="/"> <FaRegMap /> 전제 지도</Link></li>
+                        <li className='active'><Link to="/map"> <FaRegMap /> 전제 지도</Link></li>
                         <li><Link to="/"> <FiTable /> 학과 정보</Link></li>
                     </ul>
                 </div>
@@ -75,11 +73,47 @@ const Map = () => {
                     </ul>
                 </div>
                 <div className="local__UN">
-                    { activeTap === '전국' ? <img src={korea__map} alt="한국 지도" /> : <MapDetail region={activeTap}/> }
-                    
+                    {activeTap === '전국' ? (
+                        <>
+                            <div className="koreaMap">
+                                <ul className='mapLocal'>
+                                    {[
+                                        '서울',
+                                        '경기',
+                                        '강원',
+                                        '인천',
+                                        '충남',
+                                        '충북',
+                                        '대전',
+                                        '경북',
+                                        '경남',
+                                        '대구',
+                                        '부산',
+                                        '울산',
+                                        '전북',
+                                        '전남',
+                                        '광주',
+                                        '제주',
+                                    ].map((name) => (
+                                        <li
+                                            key={name}
+                                            className={`localName ${name}`}
+                                        >
+                                            <button type='button' onClick={() => handleTapClick(name)}>
+                                                {name}
+                                            </button>
+                                        </li>
+                                    ))}
+                                    <li className='localName 독도'><span>독도</span></li>
+                                </ul>
+                            </div>
+
+                        </>
+                    ) : (<MapDetail region={activeTap} />)}
+
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

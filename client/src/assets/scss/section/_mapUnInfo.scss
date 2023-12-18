@@ -1,0 +1,166 @@
+// 공통 이미지와 대학 정보
+.local__map__Wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .local__map {
+        width: 60%;
+        height: 70vh;
+        background-image: url(../../img/map/gangwon.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        ul {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+
+            li {
+                // position: absolute;
+
+                button {
+                    font-size: 0.9rem;
+                    color: #626262;
+                    background-color: #ffffff00;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                }
+
+                // 강원 
+                // &.경동대 {}
+
+                // &.가톨릭관동대(양양캠) {}
+
+                // &.강원대 {}
+
+                // &.춘천대교 {}
+
+                // &.한림대 {}
+
+                // &.국립강릉원주대 {}
+
+                // &.가톨릭관동대 {}
+
+                // &.강원대(삼척캠) {}
+
+                // &.국립강릉원주대(원주캠) {}
+
+                // &.상지대 {}
+
+                // &.연세대(원주캠) {}
+
+                // &.한라대 {}
+            }
+        }
+    }
+
+    .UnInfo__Wrap {
+        width: 40%;
+        border: 1px solid #7C7C7C;
+        border-radius: 20px;
+
+        .UnDetaile {
+            padding: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+
+            .UnDetailInfo {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .UnName {
+                    font-family: GmarketSansBold;
+                    font-size: 2rem;
+                    margin-bottom: 2vh;
+                }
+
+                span {
+                    font-size: 1rem;
+                    word-break: keep-all;
+                    margin-bottom: 1vh;
+
+                    p {
+                        display: inline-block;
+                        color: #7C7C7C;
+                        margin: 0 1.5vw;
+                        word-break: keep-all;
+                    }
+
+                    &.UnAdress {
+                        width: 100%;
+                        margin-bottom: 2vh;
+                    }
+
+                    &.UnSystem {
+                        width: 50%;
+                    }
+
+                    &.Unfound {
+                        width: 50%;
+                    }
+
+                    &.Uncampus {
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+            .UnDetailimg {
+                width: 28%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .UnGoal {
+            display: flex;
+            justify-content: space-between;
+            background-color: #00ca831e;
+            align-items: center;
+            padding: 5%;
+
+
+            .UnGoalmender {
+                text-align: left;
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    color: var(--gree);
+
+                    p {
+                        display: inline-block;
+                        font-size: 1.1rem;
+                        font-weight: normal;
+                        color: #7C7C7C;
+                    }
+                }
+            }
+
+            .UnmajorInfo {
+                a {
+                    padding: 2vh 3vw;
+                    border: 1px solid #7C7C7C;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+// 서울(대학 위치)
