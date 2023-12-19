@@ -18,8 +18,8 @@ const Header = () => {
                 <nav className="nav">
                     <ul>
                         <li><Link to="/map" className='active'>ADD MAP</Link></li>
-                        <li><Link to="/">ADD COMM</Link></li>
-                        <li><Link to="/">ADD SCORE</Link></li>
+                        <li><Link to="/comm">ADD COMM</Link></li>
+                        <li><Link to="/score">ADD SCORE</Link></li>
                         <li><Link to="/">MYPAGE</Link></li>
                     </ul>
                 </nav>
@@ -27,7 +27,7 @@ const Header = () => {
 
             <div className="header__right">
                 <Link to="/">홈</Link>
-                <Link to="/">로그인</Link>
+                <Link to="/login">로그인</Link>
             </div>
         </header>
     )

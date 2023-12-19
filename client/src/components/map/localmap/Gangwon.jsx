@@ -2,43 +2,39 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import 성신여자대학교 from '../../../assets/img/unlogo/성신여자대학교.png'
+import 강원 from '../../../assets/img/map/강원.png'
 
 const Gangwon = () => {
-
     const [activeUn, SetActiveUn] = useState("경동대");
 
     const handleClick = (UnName) => {
         SetActiveUn(UnName);
     };
-
     return (
         <div className='local__map__Wrap'>
             <div className="local__map">
-                <ul>
-                    {[
-                        '경동대',
-                        '가톨릭관동대(양양캠)',
-                        '강원대',
-                        '춘천대교',
-                        '한림대',
-                        '국립강릉원주대',
-                        '가톨릭관동대',
-                        '강원대(삼척캠)',
-                        '국립강릉원주대(원주캠)',
-                        '상지대',
-                        '연세대(원주캠)',
-                        '한라대',
-                    ].map((UnName) => (
-                        <li
-                            key={UnName}
-                            className={activeUn === UnName ? `UnPlace activeUn ${UnName}` : `UnPlace ${UnName}`}
-                        >
-                            <button type='button' onClick={() => handleClick(UnName)}>
-                                {UnName}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
+                <img src={강원} alt="지도" />
+                {[
+                    '경동대',
+                    '가톨릭관동대(양양캠)',
+                    '강원대',
+                    '춘천대교',
+                    '한림대',
+                    '국립강릉원주대',
+                    '가톨릭관동대',
+                    '강원대(삼척캠)',
+                    '국립강릉원주대(원주캠)',
+                    '상지대',
+                    '연세대(원주캠)',
+                    '한라대',
+                ].map((UnName) => (
+                    <span onClick={() => handleClick(UnName)}
+                        key={UnName}
+                        className={activeUn === UnName ? `UnPlace activeUn ${UnName}` : `UnPlace ${UnName}`}>
+                        {UnName}
+                    </span>
+
+                ))}
             </div>
             <div className="UnInfo__Wrap">
                 <div className="UnDetaile">
@@ -58,8 +54,8 @@ const Gangwon = () => {
                         <h3>목표 대학 선택 회원수</h3>
                         <span>1259 <p>명</p></span>
                     </div>
-                    <div className="UnmajorInfo">
-                        <Link to="/Unmajor">학과정보 +</Link>
+                    <div className="department">
+                        <Link to="/department">학과정보 +</Link>
                     </div>
                 </div>
             </div>

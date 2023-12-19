@@ -24,52 +24,52 @@ const MapDetail = (props) => {
 
   switch (region) {
     case '서울':
-      regionComponent = <Seoul />;
+      regionComponent = <Seoul local={region} />;
       break;
     case '경기':
-      regionComponent = <Gyeonggi />;
+      regionComponent = <Gyeonggi local={region} />;
       break;
     case '강원':
-      regionComponent = <Gangwon />;
+      regionComponent = <Gangwon local={region} />;
       break;
     case '인천':
-      regionComponent = <Incheon />;
+      regionComponent = <Incheon local={region} />;
       break;
     case '충남':
-      regionComponent = <Chungcheongnam />;
+      regionComponent = <Chungcheongnam local={region} />;
       break;
     case '충북':
-      regionComponent = <Chungcheongbuk />;
+      regionComponent = <Chungcheongbuk local={region} />;
       break;
     case '대전':
-      regionComponent = <Daejeon />;
+      regionComponent = <Daejeon local={region} />;
       break;
     case '경북':
-      regionComponent = <Gyeongsangbuk />;
+      regionComponent = <Gyeongsangbuk local={region} />;
       break;
     case '경남':
-      regionComponent = <Gyeongsangnam />;
+      regionComponent = <Gyeongsangnam local={region} />;
       break;
     case '대구':
-      regionComponent = <Daegu />;
+      regionComponent = <Daegu local={region} />;
       break;
     case '부산':
-      regionComponent = <Busan />;
+      regionComponent = <Busan local={region} />;
       break;
     case '울산':
-      regionComponent = <Ulsan />;
+      regionComponent = <Ulsan local={region} />;
       break;
     case '전북':
-      regionComponent = <Jeollabuk />;
+      regionComponent = <Jeollabuk local={region} />;
       break;
     case '전남':
-      regionComponent = <Jeollanam />;
+      regionComponent = <Jeollanam local={region} />;
       break;
     case '광주':
-      regionComponent = <Gwangju />;
+      regionComponent = <Gwangju local={region} />;
       break;
     case '제주':
-      regionComponent = <Jeju />;
+      regionComponent = <Jeju local={region} />;
       break;
     default:
       regionComponent = null; // 알 수 없는 탭일 경우 처리

@@ -3,71 +3,71 @@
     flex-wrap: wrap;
     height: inherit;
 
-    .menu__info {
+    .nav {
         width: 15%;
         background-color: #F4F4F4;
         text-align: center;
-        border-right: 1px solid #D6D6D6;
+        border-right: 2px solid #D6D6D6;
 
-        .menu__title {
-            margin: 5vh 0 3vh 0;
+        h2 {
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 55px;
+            padding: 15px 10px 12px;
+            background-color: var(--primary-color);
+            font-size: 20px;
+            border-radius: 7px;
             color: var(--white);
-            display: inline-block;
-            padding: 1vh 4vw;
-            border-radius: 10px;
-            background-color: #00E594;
-            text-transform: uppercase;
+            font-weight: 900;
         }
 
-        .menu__Detail {
+        ul {
+            margin-top: 30px;
+            background-color: var(--white);
 
-            ul {
+            li {
                 text-align: left;
+                padding: 15px 20px 12px;
+                display: flex;
+                align-items: center;
+                position: relative;
 
-                li {
-                    width: 100%;
-                    background-color: #fff;
-                    position: relative;
+                div {
+                    margin-right: 5px;
+                    margin-bottom: 3px;
+                    width: 20px;
+                    height: 20px;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
 
-                    a {
-                        text-align: left;
-                        display: inline-block;
-                        padding: 1.5vh 40px;
-                        color: var(--black700);
-                        font-size: 1rem;
-
-                        svg {
-                            color: var(--black700);
-                            position: absolute;
-                            content: '';
-                            top: 1.6vh;
-                            left: 18px;
-                        }
+                    svg {
+                        color: #565656;
+                        position: absolute;
+                        content: '';
+                        top: 1.6vh;
+                        left: 18px;
                     }
+                }
 
-                    &:hover {
-                        background-color: #00e59527;
+                button {
+                    color: #565656;
+                    background-color: #ffffff00;
+                    cursor: pointer;
+                }
+            }
 
-                        a {
-                            color: var(--black);
+            .active {
+                background-color: #D9F2E9;
 
-                            svg {
-                                color: var(--black);
-                            }
-                        }
+                div {
+                    svg {
+                        color: var(--black);
                     }
+                }
 
-                    &.active {
-                        background-color: #00e59527;
-
-                        a {
-                            color: var(--black);
-
-                            svg {
-                                color: var(--black);
-                            }
-                        }
-                    }
+                button {
+                    color: var(--black);
                 }
             }
         }
