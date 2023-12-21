@@ -15,6 +15,22 @@ const Mapdepartment = () => {
                     <input type="search" name="DepartSearchKeyword" id="DepartSearchKeyword" placeholder="학과명 검색" required />
                 </div>
             </div>
+            <div className='depart__wrap'>
+                <div className='depart__type'>
+                    <div className='depart__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary"></div>
+                        <div className="depart__jop"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
