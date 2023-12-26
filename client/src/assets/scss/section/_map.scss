@@ -189,125 +189,116 @@
                 background-position: center center;
                 background-size: cover;
 
-                .mapLocal {
+
+                .localName {
                     position: absolute;
                     top: 0;
                     left: 0;
+                    width: 3rem;
+                    font-size: 1vw;
+                    color: #626262;
+                    background-color: #ffffff00;
+                    cursor: pointer;
+                    transition: all 0.2s;
 
-                    .localName {
-                        position: absolute;
+                    &:hover {
+                        color: var(--black);
+                        font-size: 1.1rem;
+                    }
 
-                        button {
-                            width: 3rem;
-                            font-size: 1rem;
-                            color: #626262;
-                            background-color: #ffffff00;
-                            cursor: pointer;
-                            transition: all 0.2s;
 
-                            &:hover {
-                                color: var(--black);
-                                font-size: 1.1rem;
-                            }
-                        }
+                    &.서울 {
+                        top: 20.5vh;
+                        left: 18.5vw;
 
-                        &.서울 {
-                            top: 20.5vh;
-                            left: 18.5vw;
+                    }
 
-                        }
+                    &.경기 {
+                        top: 24vh;
+                        left: 21vw;
+                    }
 
-                        &.경기 {
-                            top: 24vh;
-                            left: 21vw;
-                        }
+                    &.강원 {
+                        top: 18vh;
+                        left: 28vw;
+                    }
 
-                        &.강원 {
-                            top: 18vh;
-                            left: 28vw;
-                        }
+                    &.인천 {
+                        top: 22vh;
+                        left: 16vw;
+                    }
 
-                        &.인천 {
-                            top: 22vh;
-                            left: 16vw;
-                        }
+                    &.충남 {
+                        top: 38vh;
+                        left: 18vw;
+                    }
 
-                        &.충남 {
-                            top: 38vh;
-                            left: 18vw;
-                        }
+                    &.충북 {
+                        top: 35vh;
+                        left: 23vw;
+                    }
 
-                        &.충북 {
-                            top: 35vh;
-                            left: 23vw;
-                        }
+                    &.대전 {
+                        top: 42vh;
+                        left: 21.3vw;
+                    }
 
-                        &.대전 {
-                            top: 42vh;
-                            left: 21.3vw;
-                        }
+                    &.경북 {
+                        top: 42vh;
+                        left: 30vw;
+                    }
 
-                        &.경북 {
-                            top: 42vh;
-                            left: 30vw;
-                        }
+                    &.경남 {
+                        top: 58vh;
+                        left: 26vw;
+                    }
 
-                        &.경남 {
-                            top: 58vh;
-                            left: 26vw;
-                        }
+                    &.대구 {
+                        top: 50.5vh;
+                        left: 29.5vw;
+                    }
 
-                        &.대구 {
-                            top: 50.5vh;
-                            left: 29.5vw;
-                        }
+                    &.부산 {
+                        top: 61.5vh;
+                        left: 33vw;
+                    }
 
-                        &.부산 {
-                            top: 61.5vh;
-                            left: 33vw;
-                        }
+                    &.울산 {
+                        top: 55.5vh;
+                        left: 34vw;
+                    }
 
-                        &.울산 {
-                            top: 55.5vh;
-                            left: 34vw;
-                        }
+                    &.전북 {
+                        top: 53vh;
+                        left: 20vw;
+                    }
 
-                        &.전북 {
-                            top: 53vh;
-                            left: 20vw;
-                        }
+                    &.전남 {
+                        top: 64vh;
+                        left: 20vw;
+                    }
 
-                        &.전남 {
-                            top: 64vh;
-                            left: 20vw;
-                        }
+                    &.광주 {
+                        top: 62.3vh;
+                        left: 17.45vw;
+                    }
 
-                        &.광주 {
-                            top: 62.3vh;
-                            left: 17.45vw;
-                        }
+                    &.제주 {
+                        top: 92vh;
+                        left: 15.5vw;
+                    }
 
-                        &.제주 {
-                            top: 92vh;
-                            left: 15.5vw;
-                        }
-
-                        &.독도 {
-                            top: 21vh;
-                            left: 44vw;
-
-                            span {
-                                width: 3rem;
-                                display: inline-block;
-                                font-size: 1rem;
-                                color: #626262;
-                                background-color: rgba(255, 255, 255, 0);
-                            }
-                        }
+                    &.독도 {
+                        top: 20vh;
+                        left: 44vw;
+                        width: 3rem;
+                        display: inline-block;
+                        font-size: 1vw;
+                        color: #626262;
+                        background-color: rgba(255, 255, 255, 0);
                     }
                 }
             }
-
         }
     }
 }

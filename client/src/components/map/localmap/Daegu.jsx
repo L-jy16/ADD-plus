@@ -2,19 +2,28 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import 성신여자대학교 from '../../../assets/img/unlogo/성신여자대학교.png'
-import 대구 from '../../../assets/img/map/대구.png'
 
 const Daegu = () => {
     const [activeUn, SetActiveUn] = useState("경북대");
+    const [activeTaget, SetActiveTaget] = useState("");
 
     const handleClick = (UnName) => {
         SetActiveUn(UnName);
     };
+
+    const TargetBtn = (targetUN) => {
+        if (activeTaget === activeUn) {
+            SetActiveTaget('');
+            console.log(SetActiveTaget)
+        } else {
+            SetActiveTaget(targetUN)
+            console.log(SetActiveTaget)
+
+        }
+    }
     return (
         <div className='local__map__Wrap'>
-            <div className="local__map">
-                <img src={대구} alt="지도" />
-
+            <div className="local__map 대구">
                 {[
                     '경북대',
                     '계명대',
@@ -50,6 +59,7 @@ const Daegu = () => {
                     </div>
                     <div className="department">
                         <Link to="/department">학과정보 +</Link>
+                        <button className={activeTaget === activeUn ? 'targetUN activeTaget' : 'targetUN'} onClick={() => TargetBtn(activeUn)}>목표대학 설정</button>
                     </div>
                 </div>
             </div>

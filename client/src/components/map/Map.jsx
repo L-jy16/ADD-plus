@@ -75,36 +75,29 @@ const Map = () => {
                             {activeTap === '전국' ? (
                                 <>
                                     <div className="koreaMap">
-                                        <ul className='mapLocal'>
-                                            {[
-                                                '서울',
-                                                '경기',
-                                                '강원',
-                                                '인천',
-                                                '충남',
-                                                '충북',
-                                                '대전',
-                                                '경북',
-                                                '경남',
-                                                '대구',
-                                                '부산',
-                                                '울산',
-                                                '전북',
-                                                '전남',
-                                                '광주',
-                                                '제주',
-                                            ].map((name) => (
-                                                <li
-                                                    key={name}
-                                                    className={`localName ${name}`}
-                                                >
-                                                    <button type='button' onClick={() => handleTapClick(name)}>
-                                                        {name}
-                                                    </button>
-                                                </li>
-                                            ))}
-                                            <li className='localName 독도'><span>독도</span></li>
-                                        </ul>
+                                        {[
+                                            '서울',
+                                            '경기',
+                                            '강원',
+                                            '인천',
+                                            '충남',
+                                            '충북',
+                                            '대전',
+                                            '경북',
+                                            '경남',
+                                            '대구',
+                                            '부산',
+                                            '울산',
+                                            '전북',
+                                            '전남',
+                                            '광주',
+                                            '제주',
+                                        ].map((name) => (
+                                            <button type='button' key={name} className={`localName ${name}`} onClick={() => handleTapClick(name)}>
+                                                {name}
+                                            </button>
+                                        ))}
+                                        <span className='localName 독도'>독도</span>
                                     </div>
 
                                 </>
