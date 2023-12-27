@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import 성신여자대학교 from '../../../assets/img/unlogo/성신여자대학교.png'
 
 const Seoul = () => {
-    const [activeUn, SetActiveUn] = useState("덕성여자대");
+    const [activeUn, SetActiveUn] = useState("성신여자대");
     const [activeTaget, SetActiveTaget] = useState("");
 
     const handleClick = (UnName) => {
@@ -63,18 +63,6 @@ const Seoul = () => {
                     '홍익대',
                     '서강대',
                     '숙명여자대',
-                    'KC대',
-                    '중앙대',
-                    '숭실대',
-                    '총신대',
-                    '가톨릭대(성의)',
-                    '서울교대',
-                    '한국예술종합학교(서초캠)',
-                    '한국체육대',
-                    '성공회대',
-                    '서울한영대',
-                    '서울대',
-
                 ].map((UnName) => (
 
 

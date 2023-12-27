@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import 성신여자대학교 from '../../../assets/img/unlogo/성신여자대학교.png'
 
 const Seoul = () => {
-    const [activeUn, SetActiveUn] = useState("덕성여자대");
+    const [activeUn, SetActiveUn] = useState("가톨릭대(성의)");
     const [activeTaget, SetActiveTaget] = useState("");
 
     const handleClick = (UnName) => {
@@ -25,55 +25,10 @@ const Seoul = () => {
         <div className='local__map__Wrap'>
             <div className="local__map 서울동남">
                 {[
-                    '덕성여자대',
-                    '한신대(서울캠)',
-                    '성신여자대(운정캠)',
-                    '한국성서대',
-                    '광운대',
-                    '삼육대',
-                    '서울과학기술대',
-                    '서울여자대',
-                    '육군사관학교',
-                    '서경대',
-                    '국민대',
-                    '동덕여자대',
-                    '한국예술종합학교(석관캠)',
-                    '성신여자대',
-                    '한성대',
-                    '고려대',
-                    '한국외국어대',
-                    '경희대',
-                    '서울시립대',
-                    '상명대',
-                    '성균관대',
-                    '가톨릭대(성심)',
-                    '한국방송통신대',
-                    '서울기독대',
-                    '명지대',
-                    '감리교신학대',
-                    '연세대',
-                    '추계예술대',
-                    '경기대(서울캠)',
-                    '이화여자대',
-                    '동국대',
-                    '한양대',
-                    '세종대',
-                    '장로회신학대',
-                    '건국대',
-                    '홍익대',
-                    '서강대',
-                    '숙명여자대',
-                    'KC대',
-                    '중앙대',
-                    '숭실대',
-                    '총신대',
                     '가톨릭대(성의)',
                     '서울교대',
                     '한국예술종합학교(서초캠)',
                     '한국체육대',
-                    '성공회대',
-                    '서울한영대',
-                    '서울대',
 
                 ].map((UnName) => (
 
