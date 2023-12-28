@@ -17,7 +17,7 @@ const Mapdepartment = () => {
             </div>
             <div className='depart__wrap'>
                 <div className='depart__type'>
-                    <div className='depart__header'>
+                    <div className='depart__box__header'>
                         <h3 className="depart__name">
                             법학과
                         </h3>
@@ -26,8 +26,228 @@ const Mapdepartment = () => {
                         </span>
                     </div>
                     <div className="depart_main">
-                        <div className="depart__salary"></div>
-                        <div className="depart__jop"></div>
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
+                    </div>
+                </div>
+                <div className='depart__type'>
+                    <div className='depart__box__header'>
+                        <h3 className="depart__name">
+                            법학과
+                        </h3>
+                        <span className='depart__percent'>
+                            취업률 <p>40%</p>
+                        </span>
+                    </div>
+                    <div className="depart_main">
+                        <div className="depart__salary">
+                            졸업 후 직장 임금 <span> 130만원 이상</span>
+                        </div>
+                        <div className="depart__jop">
+                            관련직업 <span>감정평가사, 노무사, 법률사무원</span>
+                        </div>
                     </div>
                 </div>
             </div>
