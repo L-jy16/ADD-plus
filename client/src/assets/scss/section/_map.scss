@@ -9,6 +9,10 @@
         text-align: center;
         border-right: 2px solid #D6D6D6;
 
+        @media (max-width: 800px) {
+            display: none;
+        }
+
         h2 {
             margin: 0 auto;
             width: 90%;
