@@ -109,7 +109,7 @@
                 input {
                     margin-left: 1vw;
                     font-size: 1vw;
-                    padding: 0.5vw 1vw;
+                    padding: 1vh 1vw;
 
                     &::placeholder {
                         color: #D6D6D6;
@@ -132,7 +132,7 @@
                         color: #D6D6D6;
                         width: 100%;
                         width: 2vw;
-                        height: 1.5vw;
+                        height: 3vh;
                     }
                 }
             }
@@ -141,7 +141,7 @@
 
         .local__tap {
             width: 85%;
-            margin-top: 1vw;
+            margin-top: 2vh;
             padding: 0 3vw;
 
             ul {
@@ -150,7 +150,7 @@
                 justify-content: space-between;
 
                 li {
-                    padding: 0.3vw 1vw;
+                    padding: 0.5vh 1vw;
 
                     button {
                         font-size: 0.9vw;

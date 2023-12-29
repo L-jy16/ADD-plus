@@ -9,6 +9,7 @@ import Home from './page/Home'
 import Map from './components/map/Map'
 import MapDetail from './components/map/MapDetail'
 import Mapdepartment from './components/map/Mapdepartment.jsx'
+import Mapdepartdetail from './components/map/Mapdepartdetail.jsx'
 
 import Join01 from './components/user/Join01.jsx'
 import Join02 from './components/user/Join02.jsx'
@@ -23,6 +24,7 @@ import CommWrite from './components/community/CommWrite.jsx'
 import CommDetail from './components/community/CommDetail.jsx'
 import Score from './components/score/Score.jsx'
 
+
 const App = () => {
   return (
     <>
@@ -34,6 +36,7 @@ const App = () => {
           <Route path='/map' element={<Map />}></Route>
           <Route path='/map/mapimg' element={<MapDetail />}></Route>
           <Route path='/map/department' element={<Mapdepartment />}></Route>
+          <Route path='/map/department/depart' element={<Mapdepartdetail />}></Route>
 
           <Route path='/comm' element={<Comm />}></Route>
           <Route path='/commwrite' element={<CommWrite />}></Route>

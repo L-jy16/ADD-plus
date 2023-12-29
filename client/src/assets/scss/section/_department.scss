@@ -30,7 +30,7 @@
             input {
                 margin-left: 1vw;
                 font-size: 1vw;
-                padding: 0.5vw 1vw;
+                padding: 1vh 1vw;
 
                 &::placeholder {
                     color: #D6D6D6;
@@ -53,45 +53,52 @@
                     color: #D6D6D6;
                     width: 100%;
                     width: 2vw;
-                    height: 1.5vw;
+                    height: 3vh;
                 }
             }
         }
     }
 
     .depart__wrap {
-        margin-top: 2vw;
+        margin-top: 4vh;
         width: 85%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
         gap: 1vw;
+        align-items: stretch;
 
 
         .depart__type {
             width: 100%;
+            height: 15vh;
             padding: 1vw;
             border: 1px solid #D6D6D6;
             border-radius: 10px;
 
             .depart__box__header {
+                height: 60%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 align-content: center;
-                margin-bottom: 1vw;
+                margin-bottom: 1vh;
+                text-align: left;
 
                 h3 {
+                    width: 75%;
                     font-weight: bold;
                     color: #434343;
-                    font-size: 1.5vw;
-                    line-height: 1;
+                    font-size: 1vw;
+                    line-height: 1.5;
+                    // padding: 1vw;
                 }
 
                 .depart__percent {
+                    width: 24%;
                     display: flex;
                     justify-content: space-between;
                     font-size: 0.7vw;
-                    padding: 0.4vw 0.4vw;
+                    padding: 0.5vw;
                     background-color: var(--primary-color);
                     line-height: 1;
                     color: var(--white);
@@ -108,9 +115,10 @@
 
             .depart_main {
                 text-align: left;
+                height: 40%;
 
                 .depart__salary {
-                    margin-bottom: 1vw;
+                    margin-bottom: 1vh;
                     line-height: 1;
                     font-size: 0.8vw;
                     font-weight: normal;
@@ -125,7 +133,7 @@
                 }
 
                 .depart__jop {
-                    margin-bottom: 0.5vw;
+                    margin-bottom: 1vh;
                     line-height: 1;
                     font-size: 0.8vw;
                     font-weight: normal;
@@ -143,7 +151,7 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .department__wrap {
 
         .depart__header {
@@ -162,19 +170,19 @@
         }
 
         .depart__wrap {
-
-            grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
-
             .depart__type {
                 width: 100%;
+                height: 14vh;
 
                 .depart__box__header {
 
                     h3 {
-                        font-size: 1.8vw;
+                        width: 70%;
+                        font-size: 1.2vw;
                     }
 
                     .depart__percent {
+                        width: 29%;
                         font-size: 0.9vw;
                     }
                 }
@@ -187,6 +195,58 @@
 
                     .depart__jop {
                         font-size: 1.1vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .department__wrap {
+
+        .depart__header {
+
+            .depart__title {}
+
+            .depart__search {
+
+                input {}
+
+                .search__img {
+
+                    svg {}
+                }
+            }
+        }
+
+        .depart__wrap {
+            grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+
+            .depart__type {
+                width: 100%;
+                padding-bottom: 3vh;
+
+                .depart__box__header {
+
+                    h3 {
+                        width: 75%;
+                        font-size: 1.7vw;
+                    }
+
+                    .depart__percent {
+                        width: 24%;
+                        font-size: 1.3vw;
+                    }
+                }
+
+                .depart_main {
+                    .depart__salary {
+                        font-size: 1.6vw;
+                    }
+
+                    .depart__jop {
+                        font-size: 1.6vw;
                     }
                 }
             }
@@ -210,13 +270,16 @@
             }
 
             .depart__search {
+                // display: none;
 
                 input {
                     font-size: 0.9rem;
+                    margin-left: 1.5vw;
                 }
 
                 .search__img {
-                    top: 0.6rem;
+                    left: 0.5vw;
+                    top: 0;
                 }
             }
         }
@@ -227,6 +290,7 @@
 
             .depart__type {
                 width: 100%;
+                padding: 2vw;
 
                 .depart__box__header {
 
@@ -247,6 +311,69 @@
 
                     .depart__jop {
                         font-size: 1.6vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .department__wrap {
+        width: 100%;
+        margin: 2vh 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .depart__header {
+            width: 100%;
+
+            .depart__title {
+                font-size: 3.5vw;
+            }
+
+            .depart__search {
+                display: none;
+                // input {
+                //     font-size: 0.9rem;
+                // }
+
+                // .search__img {
+                //     top: 0.6rem;
+                // }
+            }
+        }
+
+        .depart__wrap {
+            width: 98%;
+            grid-template-columns: repeat(auto-fill, minmax(98%, 1fr));
+            gap: 2.5vw;
+
+            .depart__type {
+                width: 100%;
+                padding: 3vw;
+
+                .depart__box__header {
+
+                    h3 {
+                        font-size: 5vw;
+                    }
+
+                    .depart__percent {
+                        font-size: 2.5vw;
+                        padding: 1vw;
+                    }
+                }
+
+                .depart_main {
+
+                    .depart__salary {
+                        font-size: 3.5vw;
+                    }
+
+                    .depart__jop {
+                        font-size: 3.5vw;
                     }
                 }
             }
