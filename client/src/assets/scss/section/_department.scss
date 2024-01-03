@@ -60,8 +60,8 @@
     }
 
     .depart__wrap {
-        margin-top: 4vh;
         width: 85%;
+        margin-top: 4vh;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
         gap: 1vw;
@@ -295,7 +295,7 @@
                 .depart__box__header {
 
                     h3 {
-                        font-size: 3vw;
+                        font-size: 2.5vw;
                     }
 
                     .depart__percent {
@@ -353,11 +353,12 @@
             .depart__type {
                 width: 100%;
                 padding: 3vw;
+                height: 20vh;
 
                 .depart__box__header {
 
                     h3 {
-                        font-size: 5vw;
+                        font-size: 4.5vw;
                     }
 
                     .depart__percent {
