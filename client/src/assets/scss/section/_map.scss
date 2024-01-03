@@ -374,8 +374,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            // height: 70vh;
-
+            align-items: flex-start;
 
             .map__header {
                 width: 100%;
@@ -398,7 +397,7 @@
             }
 
             .local__tap {
-                width: 29%;
+                width: 25%;
 
                 ul {
                     flex-direction: column;
@@ -407,22 +406,12 @@
                         button {
                             font-size: 0.8rem;
                         }
-
-                        &.activeTap {
-
-                            button {}
-                        }
-
-                        &:hover {
-
-                            button {}
-                        }
                     }
                 }
             }
 
             .local__UN {
-                width: 70%;
+                width: 74%;
                 height: inherit;
 
                 .koreaMap {
@@ -430,9 +419,96 @@
                     height: 70vh;
 
                     .localName {
+                        font-size: 1.5vw;
 
-                        &:hover {}
+                        &.서울 {
+                            // 3.5
+                            // 6.5
+                            top: 16vh;
+                            left: 25vw;
 
+                        }
+
+                        &.경기 {
+                            top: 18.5vh;
+                            left: 28vw;
+                        }
+
+                        &.강원 {
+                            top: 14.5vh;
+                            left: 38vw;
+                        }
+
+                        &.인천 {
+                            top: 17vh;
+                            left: 20vw;
+                        }
+
+                        &.충남 {
+                            top: 27.5vh;
+                            left: 24.5vw;
+                        }
+
+                        &.충북 {
+                            top: 24vh;
+                            left: 32vw;
+                        }
+
+                        &.대전 {
+                            top: 30vh;
+                            left: 28vw;
+                        }
+
+                        &.경북 {
+                            top: 30vh;
+                            left: 45vw;
+                        }
+
+                        &.경남 {
+                            top: 42vh;
+                            left: 40vw;
+                        }
+
+                        &.대구 {
+                            top: 36vh;
+                            left: 40vw;
+                        }
+
+                        &.부산 {
+                            top: 43vh;
+                            left: 50vw;
+                        }
+
+                        &.울산 {
+                            top: 39vh;
+                            left: 52vw;
+                        }
+
+                        &.전북 {
+                            top: 35vh;
+                            left: 25vw;
+                        }
+
+                        &.전남 {
+                            top: 47vh;
+                            left: 20vw;
+                        }
+
+                        &.광주 {
+                            top: 43.5vh;
+                            left: 20vw;
+                        }
+
+                        &.제주 {
+                            top: 63vh;
+                            left: 15.5vw;
+                        }
+
+                        &.독도 {
+                            font-size: 1.5vw;
+                            top: 16vh;
+                            left: 64.5vw;
+                        }
                     }
                 }
             }
@@ -443,6 +519,8 @@
     .mapdetail__wrap {
 
         .map_desc {
+            width: 100%;
+
             span {
 
                 &::before {}

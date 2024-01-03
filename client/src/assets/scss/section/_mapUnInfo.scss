@@ -91,25 +91,25 @@
 
                 &.국립강릉원주대\(원주캠\) {
                     top: 54vh;
-                    // top: 25.5vw;
+                    // top: 26vw;
                     left: 16vw;
                 }
 
                 &.상지대 {
                     top: 54vh;
-                    // top: 25.5vw;
+                    // top: 26vw;
                     left: 24.3vw;
                 }
 
                 &.연세대\(원주캠\) {
                     top: 54vh;
-                    // top: 25.5vw;
+                    // top: 26vw;
                     left: 27vw;
                 }
 
                 &.한라대 {
                     top: 54vh;
-                    // top: 25.5vw;
+                    // top: 26vw;
                     left: 32.5vw;
                 }
             }
@@ -2366,4 +2366,138 @@
     }
 }
 
-// 서울(대학 위치)
+@media (max-width: 800px) {
+    .local__map__Wrap {
+        display: block;
+
+        .local__map {
+            width: 100%;
+
+            &.강원 {
+                width: 100%;
+            }
+
+            &.서울 {
+                width: 100%;
+            }
+
+            &.서울북 {
+                width: 100%;
+            }
+
+            &.서울남서 {
+                width: 100%;
+            }
+
+            &.서울동남 {
+                width: 100%;
+            }
+
+            &.경기 {
+                width: 100%;
+            }
+
+            &.인천 {
+                width: 100%;
+            }
+
+            &.충남 {
+                width: 100%;
+            }
+
+            &.충북 {
+                width: 100%;
+            }
+
+            &.대전 {
+                width: 100%;
+            }
+
+            &.경북 {
+                width: 100%;
+            }
+
+            &.경남 {
+                width: 100%;
+            }
+
+            &.대구 {
+                width: 100%;
+            }
+
+            &.부산 {
+                width: 100%;
+            }
+
+            &.울산 {
+                width: 100%;
+            }
+
+            &.전북 {
+                width: 100%;
+            }
+
+            &.전남 {
+                width: 100%;
+            }
+
+            &.광주 {
+                width: 100%;
+            }
+        }
+
+        &.제주 {
+            width: 100%;
+        }
+    }
+}
+
+.UnInfo__Wrap {
+    width: 100%;
+
+    .UnDetaile {
+
+        .UnDetailInfo {
+
+
+            .UnName {}
+
+            span {
+                p {}
+
+                &.UnAdress {}
+
+                &.UnSystem {}
+
+                &.Unfound {}
+
+                &.Uncampus {}
+            }
+
+
+        }
+
+        .UnDetailimg {
+            img {}
+        }
+    }
+
+    .UnGoal {
+
+
+        .UnGoalmender {
+            h3 {}
+
+            span {
+                p {}
+            }
+        }
+
+        .department {
+
+            a {}
+
+            .targetUN {}
+        }
+    }
+}
