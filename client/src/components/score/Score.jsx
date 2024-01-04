@@ -13,17 +13,19 @@ const Score = () => {
 
                 <div className="score_cont">
                     <table>
+
+
                         <tr>
                             <td>비교 유형</td>
                             <th>
                                 <div className='check_wrap'>
                                     <label className="checkCont">입결 비교
                                         <input type="radio" checked="checked" name="radio" />
-                                        <span class="checkmark"></span>
+                                        <span className="checkmark"></span>
                                     </label>
                                     <label className="checkCont">수험생 비교
                                         <input type="radio" name="radio" />
-                                        <span class="checkmark"></span>
+                                        <span className="checkmark"></span>
                                     </label>
                                 </div>
                             </th>
@@ -229,6 +231,8 @@ const Score = () => {
                                 </table>
                             </th>
                         </tr>
+
+
                     </table>
                 </div>
             </div>

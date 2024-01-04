@@ -1,26 +1,20 @@
 import React from 'react'
-import CommSide from './CommSide'
 import { Link } from 'react-router-dom'
 // import Header from '../layout/Header'
+import MypageSide from './MypageSide'
 
-const Comm = () => {
+const MypageActive = () => {
     return (
         <>
             {/* <Header /> */}
-            <div className="comm__Wrap">
-                <CommSide />
+            <div className="comm__Wrap mypage_Wrap">
+                <MypageSide />
                 <div className='main'>
                     <div className="comm__top">
                         <div className="comm_tab">
                             <ul>
-                                <li className='main-tab active'>인기</li>
-                                <li className='main-tab'>최신</li>
-                            </ul>
-                        </div>
-                        <div className="comm__search">
-                            <input type="text" className='search' />
-                            <ul>
-                                <li><a href="/commwrite">글쓰기</a></li>
+                                <li className='main-tab active'>좋아요 한 글</li>
+                                <li className='main-tab'>작성한 글/댓글</li>
                             </ul>
                         </div>
                     </div>
@@ -302,4 +296,4 @@ const Comm = () => {
     )
 }
 
-export default Comm
+export default MypageActive

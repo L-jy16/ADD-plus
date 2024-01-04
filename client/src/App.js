@@ -24,6 +24,14 @@ import CommWrite from './components/community/CommWrite.jsx'
 import CommDetail from './components/community/CommDetail.jsx'
 import Score from './components/score/Score.jsx'
 
+import MypageScore from './components/mypage/MypageScore.jsx'
+import MypageInput from './components/mypage/MypageInput.jsx'
+import MypageActive from './components/mypage/MypageActive.jsx'
+import MypageCollege from './components/mypage/MypageCollege.jsx'
+import MypagePoint from './components/mypage/MypagePoint.jsx'
+import MypageDisplay from './components/mypage/MypageDisplay.jsx'
+import MypageMyinfo from './components/mypage/MypageMyinfo.jsx'
+import MypageTarget from './components/mypage/MypageTarget.jsx'
 
 const App = () => {
   return (
@@ -44,6 +52,15 @@ const App = () => {
 
           <Route path='/score' element={<Score />}></Route>
 
+          <Route path='/mypage' element={<MypageScore />}></Route>
+          <Route path='/mypageInput' element={<MypageInput />}></Route>
+          <Route path='/mypageActive' element={<MypageActive />}></Route>
+          <Route path='/mypageCollege' element={<MypageCollege />}></Route>
+          <Route path='/mypagePoint' element={<MypagePoint />}></Route>
+          <Route path='/mypageDisplay' element={<MypageDisplay />}></Route>
+          <Route path='/mypageMyinfo' element={<MypageMyinfo />}></Route>
+          <Route path='/mypageTarget' element={<MypageTarget />}></Route>
+
           <Route path='/join01' element={<Join01 />}></Route>
           <Route path='/join02' element={<Join02 />}></Route>
           <Route path='/join03' element={<Join03 />}></Route>
@@ -52,6 +69,7 @@ const App = () => {
           <Route path='/find' element={<Find />}></Route>
           <Route path='/find02' element={<Find02 />}></Route>
           <Route path='/find03' element={<Find03 />}></Route>
+
         </Routes>
       </Main>
       <Footer />
