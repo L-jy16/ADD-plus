@@ -1,7 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CommSide from './CommSide'
+import axios from 'axios'
+import { useSelector } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import CommImg from './CommImg';
 
 const CommWrite = () => {
+    const [selectCate, setSeletCate] = useState('일반게시판')
+    const [title, setTitle] = useState('')
+    const [content, setContent] = useState('')
+    const [image, setImage] = useState("");
+    const user = useSelector((state) => state.user)
+
+    const navigate = useNavigate()
+
+    const cateChange = (e) => {
+        const selectValue = e.target.value;
+        setSeletCate(selectValue);
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        if (title === "" || content === "") {
+            return alert("내용을 채워주세요!");
+        }
+
+        let body = {
+            cate: selectCate,
+            title: title,
+            content: content,
+            uid: user.uid,
+            img: image
+        }
+
+        axios.post("/api/post/write", body)
+            .then((res) => {
+                if (res.data.success) {
+                    alert("글 작성이 완료되었습니다.");
+                    navigate("/comm");
+                } else {
+                    alert("글 작성이 실패하였습니다.");
+                }
+            })
+    }
+
     return (
         <>
             <div className="comm__Wrap">
@@ -12,7 +55,7 @@ const CommWrite = () => {
                     </div>
                     <div className="write__box">
                         <div className="cate">
-                            <select name="category" id="cate">
+                            <select name="category" id="cate" value={selectCate} onChange={cateChange}>
                                 <option value="일반게시판">일반게시판</option>
                                 <option value="입시결과게시판">입시결과 게시판</option>
                                 <option value="대학생게시판">대학생 게시판</option>
@@ -22,11 +65,16 @@ const CommWrite = () => {
                                 <option value="교사게시판">교사 게시판</option>
                                 <option value="정보게시판">정보 게시판</option>
                             </select>
-                            {/* <img src={arrow} alt="arrow" className='img' /> */}
                         </div>
                         <div className="input">
                             <label htmlFor="title"></label>
-                            <input type="text" placeholder='제목을 입력하세요' className='title' />
+                            <input
+                                type="text"
+                                placeholder='제목을 입력하세요'
+                                className='title'
+                                value={title}
+                                onChange={(e) => setTitle(e.currentTarget.value)}
+                            />
                             <label htmlFor="content"></label>
                             <textarea
                                 placeholder='쾌적한 ADD 커뮤니티 사용을 위해 아래 규칙을 지켜주세요.
@@ -42,14 +90,18 @@ const CommWrite = () => {
                                 3. 욕설 및 비속어 금지
                                 욕설, 비속어, 혐오적인 표현은 삼가해 주세요.
                                 다양한 의견을 존중하며 토론하세요.'
+                                value={content}
+                                onChange={(e) => setContent(e.currentTarget.value)}
                             ></textarea>
-                            <input type="file" className='file' />
+                            <CommImg setImage={setImage} />
                         </div>
                         <div className='button'>
                             <ul>
                                 <li><a href="/comm">취소</a></li>
                             </ul>
-                            <button>등록</button>
+                            <button
+                                onClick={(e) => { onSubmit(e) }}
+                            >등록</button>
                         </div>
                     </div>
                 </div>

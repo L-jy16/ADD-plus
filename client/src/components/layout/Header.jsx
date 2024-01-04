@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import firebase from '../../firebase.js'
 import logoImg from '../../assets/img/header_logo.png';
 
 const Header = () => {
@@ -8,10 +9,22 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [linkActive, setLinkActive] = useState("");
 
+    // 로그인 확인
+    const user = useSelector(state => state.user);
+    const navigate = useNavigate();
+
+    // 로그아웃 
+    const LogoutHandler = () => {
+        firebase.auth().signOut();
+        navigate("/");
+    }
+
+    // 토글 메뉴
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
 
+    // active 되는 곳
     const LinkhandleClick = (to) => {
         setLinkActive(to);
     }
@@ -41,8 +54,18 @@ const Header = () => {
                 </div>
 
                 <div className="header__right">
-                    <Link to="/">홈</Link>
-                    <Link to="/login">로그인</Link>
+                    {user.accessToken === "" ? (
+                        <>
+                            <Link to="/">홈</Link>
+                            <Link to="/login">로그인</Link>
+                        </>
+                    ) : (
+                        <>
+                            <Link to="/mypage">{user.displayName} 님</Link>
+                            <Link to="/" onClick={(() => LogoutHandler())}>로그아웃</Link>
+
+                        </>
+                    )}
                 </div>
             </div>
 
