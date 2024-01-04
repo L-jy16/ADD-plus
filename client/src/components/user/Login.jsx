@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 const Login = () => {
@@ -82,12 +82,12 @@ const Login = () => {
                         <div>
                             <ul>
                                 <li>
-                                    <a href="/">아이디 찾기</a>
+                                    <Link to="../findId">아이디 찾기</Link>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="/find">비밀번호 찾기</a>
+                                    <Link to="../find">비밀번호 찾기</Link>
                                 </li>
                             </ul>
                         </div>

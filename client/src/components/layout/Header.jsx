@@ -13,11 +13,14 @@ const Header = () => {
     const user = useSelector(state => state.user);
     const navigate = useNavigate();
 
+    console.log(user.accessToken)
+
     // 로그아웃 
     const LogoutHandler = () => {
         firebase.auth().signOut();
         navigate("/");
     }
+
 
     // 토글 메뉴
     const toggleMenu = () => {
