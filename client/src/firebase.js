@@ -2,12 +2,12 @@ import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDBJlujRjQySZNo5ngriqVmQWBfVNS3ZJs",
-    authDomain: "add-plus-d208e.firebaseapp.com",
-    projectId: "add-plus-d208e",
-    storageBucket: "add-plus-d208e.appspot.com",
-    messagingSenderId: "807979576334",
-    appId: "1:807979576334:web:ce557876cc21a1d7b8605f"
+    apiKey: "AIzaSyCABXDmUd7blmmBaMq3At8WNnYn8mnNlZw",
+    authDomain: "addplus-40610.firebaseapp.com",
+    projectId: "addplus-40610",
+    storageBucket: "addplus-40610.appspot.com",
+    messagingSenderId: "1059173956536",
+    appId: "1:1059173956536:web:067847b83386953d07ed4d"
 };
 
 firebase.initializeApp(firebaseConfig)

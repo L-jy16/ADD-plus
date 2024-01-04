@@ -9,7 +9,7 @@ const Join04 = () => {
                         <div></div>
                     </div>
                     <h1>회원가입 완료</h1>
-                    <p><span>정유진</span>님, 가입을 축하합니다.<br />
+                    <p><span></span>님, 가입을 축하합니다.<br />
                         로그인 후 에드플러스를 마음껏 활용하세요!</p>
                 </div>
                 <div className="join04_button_box">
