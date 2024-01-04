@@ -2450,54 +2450,54 @@
             width: 100%;
         }
     }
-}
 
-.UnInfo__Wrap {
-    width: 100%;
+    .UnInfo__Wrap {
+        width: 100%;
 
-    .UnDetaile {
+        .UnDetaile {
 
-        .UnDetailInfo {
+            .UnDetailInfo {
 
 
-            .UnName {}
+                .UnName {}
 
-            span {
-                p {}
+                span {
+                    p {}
 
-                &.UnAdress {}
+                    &.UnAdress {}
 
-                &.UnSystem {}
+                    &.UnSystem {}
 
-                &.Unfound {}
+                    &.Unfound {}
 
-                &.Uncampus {}
+                    &.Uncampus {}
+                }
+
+
             }
 
-
-        }
-
-        .UnDetailimg {
-            img {}
-        }
-    }
-
-    .UnGoal {
-
-
-        .UnGoalmender {
-            h3 {}
-
-            span {
-                p {}
+            .UnDetailimg {
+                img {}
             }
         }
 
-        .department {
+        .UnGoal {
 
-            a {}
 
-            .targetUN {}
+            .UnGoalmender {
+                h3 {}
+
+                span {
+                    p {}
+                }
+            }
+
+            .department {
+
+                a {}
+
+                .targetUN {}
+            }
         }
     }
 }
