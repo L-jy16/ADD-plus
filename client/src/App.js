@@ -51,6 +51,8 @@ const App = () => {
     firebase.auth().onAuthStateChanged((userInfo) => {
       if (userInfo !== null) {
         dispatch(loginUser(userInfo.multiFactor.user));
+
+        console.log(userInfo)
       } else {
         dispatch(clearUser())
       }

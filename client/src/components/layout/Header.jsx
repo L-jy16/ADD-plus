@@ -13,7 +13,7 @@ const Header = () => {
     const user = useSelector(state => state.user);
     const navigate = useNavigate();
 
-    console.log(user.accessToken)
+    // console.log(user)
 
     // 로그아웃 
     const LogoutHandler = () => {
