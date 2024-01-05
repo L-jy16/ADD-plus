@@ -29,8 +29,8 @@ import FindId02 from './components/user/FindId/FindId02.jsx'
 import FindId03 from './components/user/FindId/FindId03.jsx'
 
 import Comm from './components/community/Comm/Comm.jsx'
-import CommModify from './components/community/Comm/CommModify.jsx'
 import CommWrite from './components/community/Comm/CommWrite.jsx'
+import CommModify from './components/community/Comm/CommModify.jsx'
 import CommArea from './components/community/Comm/CommArea.jsx'
 
 import Score from './components/score/Score.jsx'
@@ -49,7 +49,7 @@ const App = () => {
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged((userInfo) => {
-      console.log("userInfo : ", userInfo)
+      console.log("userInfo:", userInfo)
       if (userInfo !== null) {
         dispatch(loginUser(userInfo.multiFactor.user));
       } else {

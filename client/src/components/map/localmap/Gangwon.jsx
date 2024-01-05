@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import 성신여자대학교 from '../../../assets/img/unlogo/성신여자대학교.png'
+import PopupUnInfo from './PopupUnInfo';
 
 const Gangwon = () => {
     const [activeUn, SetActiveUn] = useState("경동대");
     const [activeTaget, SetActiveTaget] = useState("");
+    const [displayPopup, setDisplayPopup] = useState(false);    // 800px일때 UnInfo__Wrap이 popup처럼 나오게
 
     const handleClick = (UnName) => {
         SetActiveUn(UnName);
+        setDisplayPopup(true);
     };
 
     const TargetBtn = (targetUN) => {
@@ -21,6 +24,7 @@ const Gangwon = () => {
 
         }
     }
+
     return (
         <div className='local__map__Wrap'>
             <div className="local__map 강원">
@@ -70,6 +74,8 @@ const Gangwon = () => {
                     </div>
                 </div>
             </div>
+
+            {displayPopup && <PopupUnInfo closePopup={() => setDisplayPopup(false)} activeUn={activeUn} />}
         </div >
     )
 }

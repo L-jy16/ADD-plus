@@ -13,7 +13,9 @@
 @import "section/home";
 @import "section/swiper";
 @import "section/map";
-@import "section/mapUnInfo";
+// @import "section/mapUnInfo";
+@import "section/contain/mapUnInfo";
+@import "section/popupuninfo";
 @import "section/department";
 @import "section/departdetail";
 
@@ -22,6 +24,6 @@
 @import "section/login";
 @import "section/find";
 @import "section/comm";
-@import "section/score";
 
+@import "section/score";
 @import "section/mypage";

@@ -404,7 +404,7 @@
 
                     li {
                         button {
-                            font-size: 0.9rem;
+                            font-size: 0.8rem;
                         }
                     }
                 }
@@ -425,7 +425,7 @@
                             // 3.5
                             // 6.5
                             top: 16vh;
-                            left: 24vw;
+                            left: 25vw;
 
                         }
 
@@ -471,7 +471,7 @@
 
                         &.대구 {
                             top: 36vh;
-                            left: 42vw;
+                            left: 40vw;
                         }
 
                         &.부산 {
@@ -496,12 +496,12 @@
 
                         &.광주 {
                             top: 43.5vh;
-                            left: 21vw;
+                            left: 20vw;
                         }
 
                         &.제주 {
                             top: 63vh;
-                            left: 18svw;
+                            left: 15.5vw;
                         }
 
                         &.독도 {
@@ -515,164 +515,16 @@
         }
     }
 
-    .map__info {
-        width: 100%;
-        margin: 2vh 2vw;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
+    // MapDetaile
+    .mapdetail__wrap {
 
-        .map__header {
+        .map_desc {
             width: 100%;
 
-            .map__title {
-                font-size: 1.2rem;
+            span {
+
+                &::before {}
             }
-
-            .map__search {
-                display: none;
-
-                input {
-                    font-size: 0.9rem;
-                }
-
-                .search__img {
-                    top: 0.6rem;
-                }
-            }
-
-        }
-
-        .local__tap {
-            width: 25%;
-
-            ul {
-                flex-direction: column;
-
-                li {
-                    button {
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-        }
-
-        .local__UN {
-            width: 74%;
-            height: inherit;
-
-            .koreaMap {
-                width: 100%;
-                height: 70vh;
-
-                .localName {
-                    font-size: 1.5vw;
-
-                    &.서울 {
-                        // 3.5
-                        // 6.5
-                        top: 16vh;
-                        left: 25vw;
-
-                    }
-
-                    &.경기 {
-                        top: 18.5vh;
-                        left: 28vw;
-                    }
-
-                    &.강원 {
-                        top: 14.5vh;
-                        left: 38vw;
-                    }
-
-                    &.인천 {
-                        top: 17vh;
-                        left: 20vw;
-                    }
-
-                    &.충남 {
-                        top: 27.5vh;
-                        left: 24.5vw;
-                    }
-
-                    &.충북 {
-                        top: 24vh;
-                        left: 32vw;
-                    }
-
-                    &.대전 {
-                        top: 30vh;
-                        left: 28vw;
-                    }
-
-                    &.경북 {
-                        top: 30vh;
-                        left: 45vw;
-                    }
-
-                    &.경남 {
-                        top: 42vh;
-                        left: 40vw;
-                    }
-
-                    &.대구 {
-                        top: 36vh;
-                        left: 40vw;
-                    }
-
-                    &.부산 {
-                        top: 43vh;
-                        left: 50vw;
-                    }
-
-                    &.울산 {
-                        top: 39vh;
-                        left: 52vw;
-                    }
-
-                    &.전북 {
-                        top: 35vh;
-                        left: 25vw;
-                    }
-
-                    &.전남 {
-                        top: 47vh;
-                        left: 20vw;
-                    }
-
-                    &.광주 {
-                        top: 43.5vh;
-                        left: 20vw;
-                    }
-
-                    &.제주 {
-                        top: 63vh;
-                        left: 15.5vw;
-                    }
-
-                    &.독도 {
-                        font-size: 1.5vw;
-                        top: 16vh;
-                        left: 64.5vw;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// MapDetaile
-.mapdetail__wrap {
-
-    .map_desc {
-        width: 100%;
-
-        span {
-            padding-left: 1.8vw;
-
-            &::before {}
         }
     }
 }

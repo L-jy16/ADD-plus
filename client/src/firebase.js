@@ -1,15 +1,14 @@
-import firebase from "firebase/compat/app"
-import "firebase/compat/auth"
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCABXDmUd7blmmBaMq3At8WNnYn8mnNlZw",
-    authDomain: "addplus-40610.firebaseapp.com",
-    projectId: "addplus-40610",
-    storageBucket: "addplus-40610.appspot.com",
-    messagingSenderId: "1059173956536",
-    appId: "1:1059173956536:web:067847b83386953d07ed4d"
+    apiKey: "AIzaSyCtFTprkAcK0QBCELxyfxpE--Veo4byF0E",
+    authDomain: "addplus-f2b1e.firebaseapp.com",
+    projectId: "addplus-f2b1e",
+    storageBucket: "addplus-f2b1e.appspot.com",
+    messagingSenderId: "1048605238945",
+    appId: "1:1048605238945:web:83204c5faae1b6844072e0"
 };
 
 firebase.initializeApp(firebaseConfig)
-
 export default firebase;
