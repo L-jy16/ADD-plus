@@ -11,6 +11,7 @@ import Footer from './components/layout/Footer'
 
 import Home from './page/Home'
 import Map from './components/map/Map'
+import Mapdepartment from './components/map/Mapdepartment.jsx'
 import Mapdepartdetail from './components/map/Mapdepartdetail.jsx'
 
 import Join01 from './components/user/Join/Join01.jsx'
@@ -44,6 +45,7 @@ import MypageDisplay from './components/mypage/MypageDisplay.jsx'
 import MypageMyinfo from './components/mypage/MypageMyinfo.jsx'
 import MypageTarget from './components/mypage/MypageTarget.jsx'
 
+
 const App = () => {
   const dispatch = useDispatch();
 
@@ -66,6 +68,7 @@ const App = () => {
           <Route path='/' element={<Home />}></Route>
 
           <Route path='/map' element={<Map />}></Route>
+          <Route path='/map/depart' element={<Mapdepartment />}></Route>
           <Route path='/map/department/:depart' element={<Mapdepartdetail />}></Route>
 
           <Route path='/comm' element={<Comm />}></Route>
